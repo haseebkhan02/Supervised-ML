@@ -1,4 +1,3 @@
-# app.py
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -10,9 +9,9 @@ st.set_page_config(page_title="Fraud Detection demo", layout="wide")
 
 @st.cache_data
 def load_artifacts():
-    preprocessor = joblib.load("artifacts/preprocessor.joblib")
-    model = joblib.load("artifacts/model.joblib")
-    with open("artifacts/metrics.json", "r") as f:
+    preprocessor = joblib.load("Fraud_Detection/artifacts/preprocessor.joblib")
+    model = joblib.load("Fraud_Detection//artifacts/model.joblib")
+    with open("Fraud_Detection/artifacts/metrics.json", "r") as f:
         metrics = json.load(f)
     return preprocessor, model, metrics
 
