@@ -90,4 +90,4 @@ if st.button("Predict single transaction"):
 st.markdown("---")
 st.write("Notes:")
 st.write("- This app expects the same preprocessing used during training.")
-st.write("- For production: add authentication, logging, monitoring, and input validation.")
+st.write("- For production: We need to add authentication, logging, monitoring, and input validation.")
