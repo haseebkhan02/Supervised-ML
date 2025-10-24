@@ -5,7 +5,7 @@ import numpy as np
 
 # Load Models, Scaler, and Encoders (with error handling)
 try:
-    log_reg = joblib.load("Loan_Default_Prediction/logistic_regression_model.pkl")
+    log_reg = joblib.load("Loan_Default_Prediction/logistic_Regression_model.pkl")
     rf = joblib.load("Loan_Default_Prediction/random_forest_model.pkl")
     scaler = joblib.load("Loan_Default_Prediction/scaler.pkl")
     le_dict = joblib.load("Loan_Default_Prediction/label_encoders.pkl")
